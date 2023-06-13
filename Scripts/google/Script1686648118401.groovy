@@ -17,3 +17,15 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://www.google.com/')
+
+WebUI.setText(findTestObject('Object Repository/Page_Google/textarea__q'), 'france')
+
+WebUI.click(findTestObject('Object Repository/Page_france - Recherche Google/h3_France'))
+
+WebUI.click(findTestObject('Object Repository/Page_France  Wikipdia/div_4Politique et administration'))
+
+WebUI.closeBrowser()
+
